@@ -1,0 +1,121 @@
+@import url();
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 150vh;
+    color:  #907d7d;
+
+}
+
+nav{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #1f2833;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #1f2833;
+    z-index: 1000;
+    /* transition: ease-in-out 0.5s; */
+   
+} 
+nav.hide{
+       width: 0px;
+
+    }
+nav ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li a{
+    width: 100%;
+    color: #66FCF1;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items:center ;
+    padding: 15px;
+    transform: linear 0.5s;
+
+}
+nav ul li a ion-icon{
+    margin: 0.20px;
+    color:  #66FCF1;
+    font-size: 1.2em;
+    transform: linear 0.2s;
+}
+nav ul li a:hover{
+    background: #45A29E;
+    color: #C5C6C7;
+}
+nav ul li a:hover ion-icon{
+    color: #C5C6C7;
+}
+.content {
+    background-image: url(1045.jpg);
+    background-repeat: repeat;
+    background-attachment:fixed;
+    
+    position: absolute;
+    top: 0qx;
+    left: 250px;
+    width: calc(100% );
+    min-height: 100%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 20px;
+    transition: ease-in-out 0.5s;}
+    .content.expand{
+        width: 100%;
+        left: 0;
+        
+    }
+    
+
+    
+.content h2 {
+    font-size: 20px;
+    color: #e8e9ea;
+    text-transform: uppercase;
+}
+nav .toggle_menu{
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(52, 45, 45, 0.699);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: linear 0.2s;
+}  
+nav.toggle_menu ion-icon {
+    color: #000000;
+    font-size: 2.5em;
+    transition: linear 0.2s;
+}
+
+  
+nav.toggle_menu:hover{
+    background: #092138;
+
+}
+nav.toggle_menu ion-icon{
+    color: #1f2833;
+    
+}
+
+
